@@ -1,0 +1,1085 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-28T18:49:15.049Z",
+        "line": 3,
+        "name": "Cria um produto com sucesso",
+        "description": "",
+        "id": "cria-um-produto-com-o-post-/products;cria-um-produto-com-sucesso",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 682305600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "defino a url da api",
+            "match": {
+              "location": "stepDefinitions.Products.defino_a_url_da_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2980587600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "chamo o POST \"products\" para criar um produto",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"products\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.Products.chamoOPOSTParaCriarUmProduto(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1994500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "valido que a consulta retorna o status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.valido_que_a_consulta_retorna_o_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 791198000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "é validado que o campo \"id\" é igual a \"21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"21\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19737700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "é validado que o campo \"title\" é igual a \"test product\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"title\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"test product\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19077000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "é validado que o campo \"price\" é igual a \"13.5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"price\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"13.5\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20752100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "é validado que o campo \"description\" é igual a \"lorem ipsum set\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"description\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"lorem ipsum set\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20043800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "é validado que o campo \"image\" é igual a \"https: //i.pravatar.cc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"image\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"https: //i.pravatar.cc\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21306600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "é validado que o campo \"category\" é igual a \"electronic\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"category\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"electronic\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Cria um produto com o POST /products",
+    "description": "",
+    "id": "cria-um-produto-com-o-post-/products",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/CreateProduct.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-28T18:49:19.730Z",
+        "line": 3,
+        "name": "Apaga um produto com sucesso",
+        "description": "",
+        "id": "apaga-um-produto-com-o-delete-/products/id;apaga-um-produto-com-sucesso",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "defino a url da api",
+            "match": {
+              "location": "stepDefinitions.Products.defino_a_url_da_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 839235700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "chamo o DELETE \"products/7\" para criar um produto",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"products/7\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.Products.chamoODELETEParaCriarUmProduto(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "valido que a consulta retorna o status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.valido_que_a_consulta_retorna_o_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16825800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "é validado que o campo \"id\" é igual a \"7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"7\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12634800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "é validado que o campo \"title\" é igual a \"White Gold Plated Princess\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"title\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"White Gold Plated Princess\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10157200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "é validado que o campo \"price\" é igual a \"9.99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"price\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"9.99\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9685500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "é validado que o campo \"description\" é igual a \"Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine\u0027s Day...\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"description\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine\u0027s Day...\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11449500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "é validado que o campo \"category\" é igual a \"jewelery\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"category\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"jewelery\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11075100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "é validado que o campo \"image\" é igual a \"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"image\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10618500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "é validado que o campo \"rate\" é igual a \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rate\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"3\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11665400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "é validado que o campo \"count\" é igual a \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"count\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"400\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Apaga um produto com o DELETE /products/id",
+    "description": "",
+    "id": "apaga-um-produto-com-o-delete-/products/id",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/DeleteProduct.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-28T18:49:20.680Z",
+        "line": 3,
+        "name": "Verifica a consulta de todos os produtos",
+        "description": "",
+        "id": "consulta-produtos;verifica-a-consulta-de-todos-os-produtos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "defino a url da api",
+            "match": {
+              "location": "stepDefinitions.Products.defino_a_url_da_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 579075900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "passo o path \"products\" na request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"products\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.Products.passo_o_path_na_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "valido que a consulta retorna o status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.valido_que_a_consulta_retorna_o_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-28T18:49:21.269Z",
+        "line": 8,
+        "name": "Verifica a consulta de apenas um produto",
+        "description": "",
+        "id": "consulta-produtos;verifica-a-consulta-de-apenas-um-produto",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "defino a url da api",
+            "match": {
+              "location": "stepDefinitions.Products.defino_a_url_da_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 812162300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "passo o path \"products/3\" na request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"products/3\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.Products.passo_o_path_na_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "valido que a consulta retorna o status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.valido_que_a_consulta_retorna_o_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12414600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "é validado que o campo \"title\" é igual a \"Mens Cotton Jacket\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"title\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Mens Cotton Jacket\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13731200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "é validado que o campo \"price\" é igual a \"55.99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"price\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"55.99\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10116400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "é validado que o campo \"category\" é igual a \"men\u0027s clothing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"category\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"men\u0027s clothing\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11074700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "é validado que o campo \"rate\" é igual a \"4.7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rate\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"4.7\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11571800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "é validado que o campo \"count\" é igual a \"500\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"count\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"500\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-28T18:49:22.149Z",
+        "line": 18,
+        "name": "Verifica a consulta do limite de resultados",
+        "description": "",
+        "id": "consulta-produtos;verifica-a-consulta-do-limite-de-resultados",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "defino a url da api",
+            "match": {
+              "location": "stepDefinitions.Products.defino_a_url_da_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 408754600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "passo o path \"products?limit\u003d2\" na request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"products?limit\u003d2\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.Products.passo_o_path_na_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "valido que a consulta retorna o status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.valido_que_a_consulta_retorna_o_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14513100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "valido que a quantidade de produtos retornados é 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.Products.valido_que_a_quantidade_de_produtos_retornados_é(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-28T18:49:22.580Z",
+        "line": 25,
+        "name": "Verifica a consulta de categorias",
+        "description": "",
+        "id": "consulta-produtos;verifica-a-consulta-de-categorias",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "defino a url da api",
+            "match": {
+              "location": "stepDefinitions.Products.defino_a_url_da_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 587902200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "passo o path \"products/categories\" na request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"products/categories\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.Products.passo_o_path_na_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 973100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "valido que a consulta retorna o status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.valido_que_a_consulta_retorna_o_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "valido que é retornado o valor \"electronics\" no response body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"electronics\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.Products.validoQueÉRetornadoOValorNoResponseBody(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "valido que é retornado o valor \"jewelery\" no response body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jewelery\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.Products.validoQueÉRetornadoOValorNoResponseBody(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "valido que é retornado o valor \"men\u0027s clothing\" no response body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"men\u0027s clothing\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.Products.validoQueÉRetornadoOValorNoResponseBody(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "valido que é retornado o valor \"women\u0027s clothing\" no response body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"women\u0027s clothing\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.Products.validoQueÉRetornadoOValorNoResponseBody(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Consulta produtos",
+    "description": "",
+    "id": "consulta-produtos",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/GetProducts.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-28T18:49:23.177Z",
+        "line": 3,
+        "name": "Atualiza um produto com sucesso",
+        "description": "",
+        "id": "atualiza-um-produto-com-o-put-/products/id;atualiza-um-produto-com-sucesso",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "defino a url da api",
+            "match": {
+              "location": "stepDefinitions.Products.defino_a_url_da_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1670340400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "chamo o PUT \"products/6\" para atualizar um produto",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"products/6\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.Products.chamoOPUTParaAtualizarUmProduto(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "valido que a consulta retorna o status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.valido_que_a_consulta_retorna_o_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6999200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "é validado que o campo \"id\" é igual a \"6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"6\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9983200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "é validado que o campo \"title\" é igual a \"test product\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"title\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"test product\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9484700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "é validado que o campo \"price\" é igual a \"13.5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"price\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"13.5\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8999800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "é validado que o campo \"description\" é igual a \"lorem ipsum set\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"description\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"lorem ipsum set\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8041400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "é validado que o campo \"image\" é igual a \"https: //i.pravatar.cc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"image\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"https: //i.pravatar.cc\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7788500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "é validado que o campo \"category\" é igual a \"electronic\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"category\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"electronic\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.Products.é_validado_que_o_campo_é_igual_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Atualiza um produto com o PUT /products/id",
+    "description": "",
+    "id": "atualiza-um-produto-com-o-put-/products/id",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/UpdateProduct.feature",
+    "tags": []
+  }
+]

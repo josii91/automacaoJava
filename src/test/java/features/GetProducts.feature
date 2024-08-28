@@ -1,4 +1,4 @@
-Feature: Consulta todos os produtos
+Feature: Consulta produtos
 
   Scenario: Verifica a consulta de todos os produtos
     Given defino a url da api
@@ -20,4 +20,18 @@ Feature: Consulta todos os produtos
     When passo o path "products?limit=2" na request
     Then valido que a consulta retorna o status code 200
     Then valido que a quantidade de produtos retornados é 2
+
+
+  Scenario: Verifica a consulta de categorias
+    Given defino a url da api
+    When passo o path "products/categories" na request
+    Then valido que a consulta retorna o status code 200
+    Then valido que é retornado o valor "electronics" no response body
+    Then valido que é retornado o valor "jewelery" no response body
+    Then valido que é retornado o valor "men's clothing" no response body
+    Then valido que é retornado o valor "women's clothing" no response body
+
+
+
+
 
